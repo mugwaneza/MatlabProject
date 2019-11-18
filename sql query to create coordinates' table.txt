@@ -1,0 +1,19 @@
+
+     use datastore;
+     drop table coordinates;
+     CREATE TABLE datastore.coordinates (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  inputx varchar(50) DEFAULT NULL,
+  inputy varchar(50) DEFAULT NULL,
+  beacon varchar(50) DEFAULT NULL,
+  pfrom varchar(50) DEFAULT NULL,
+  pto varchar(50) DEFAULT NULL,
+  distance double DEFAULT NULL,
+  bearing double DEFAULT NULL,
+  created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB,
+AUTO_INCREMENT = 76,
+CHARACTER SET utf8,
+COLLATE utf8_general_ci;
